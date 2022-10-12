@@ -49,7 +49,17 @@ var shouldOrderMore = evaluateStock()
 // the statement 'I'm going to eat some [food]!', otherwise, log the statement
 // 'We need to get some more [food].'
 
+var stockCount = 9;
+var food = "chocolate covered cashews";
 
+function countFoodStock (){
+  if (stockCount >= 1) {
+    console.log(`I'm going to eat some ${food}!`)
+  } else {
+    console.log(`We need to get some more ${food}.`)
+  }
+}
+countFoodStock();
 
 // Express the following in code: If the variable "isFavorite" is true,
 // log the statement 'My favorite food is [food]!'. Otherwise, log the
