@@ -16,11 +16,11 @@
 
 // Reassign (not initialize) your "inStock" variable from above. We got a new shipment! Use a built in math operator to make
 // the inStock count double what it currently is.
-inStock = 10*2
+inStock = inStock *2
 
 // Reassign (not initialize) your "inStock" variable from above. You got hungry and needed a snack!
 // Use a built in math operator to decrement the inStock count by 1.
-inStock = 20-1
+inStock = inStock -1
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the food you chose is your favorite food or not
@@ -66,7 +66,7 @@ countFoodStock();
 // statement 'I recently ate [food]'. In either case, the value stored in
 // the "food" variable should be included in the logged statement.
 
-function ksjfsjfd {
+function ksjfsjfd() {
   if (isFavorite === true) {
     console.log(`My favorite food is ${food}!`)
   } else {
