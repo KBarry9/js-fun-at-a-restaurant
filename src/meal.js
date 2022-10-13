@@ -4,7 +4,12 @@ function nameMenuItem(food) {
 }
 
 function createMenuItem() {
-
+  var menuItem = {
+    name: nameMenuItem("French Toast"),
+    price: 10.99, 
+    type: "breakfast",
+  }
+return menuItem 
 }
 
 
