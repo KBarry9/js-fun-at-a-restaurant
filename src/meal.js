@@ -12,12 +12,17 @@ function createMenuItem() {
 return menuItem 
 }
 
-
+function addIngredients(ingredients) {
+  var ingredients = [];
+  for( var i = 0; i < ingredients.length; i++) {
+    return ingredients.push();
+  }
+}
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
-  // addIngredients,
+  addIngredients,
   // formatPrice,
   // decreasePrice,
   // createRecipe
