@@ -12,18 +12,22 @@ function createMenuItem() {
 return menuItem 
 }
 
-function addIngredients(ingredients) {
+function addIngredients(food, ingredients) {
   var ingredients = [];
-  for( var i = 0; i < ingredients.length; i++) {
     return ingredients.push();
-  }
+  
+}
+
+function formatPrice() {
+  var initialPrice = "$" + createMenuItem.menuItem.price()
+  return initialPrice;
 }
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
-  // formatPrice,
+  formatPrice,
   // decreasePrice,
   // createRecipe
 }
