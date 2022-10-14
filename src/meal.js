@@ -13,9 +13,12 @@ return menuItem
 }
 
 function addIngredients(food, ingredients) {
-  var ingredients = [];
-    return ingredients.push();
-  
+  //var ingredients = [];
+  if (ingredients.includes(food) === false) {
+    return ingredients.push(food)
+  }
+    //return ingredients.push(food);
+
 }
 
 function formatPrice() {
