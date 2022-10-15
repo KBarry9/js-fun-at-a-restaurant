@@ -1,43 +1,35 @@
-function nameMenuItem(name) {
-  let menuItemName = 'Delicious ' + name;
-
-  return menuItemName;
+function nameMenuItem(food) {
+  var Yum = `Delicious ${food}`
+  return Yum;
 }
 
 function createMenuItem(name, price, type) {
-  let createMenuItem = {
-    name, price, type
-  };
-
-  return createMenuItem;
+  var menuItem = {
+    name: name, 
+    price: price, 
+    type: type,
+  }
+  return menuItem;
 }
 
-function addIngredients(ingredient, ingredients) {
-
-  if (ingredients.includes(ingredient) === false) {
-    ingredients.push(ingredient);
+function addIngredients(food, ingredients) {
+  if (ingredients.includes(food) === false) {
+      return ingredients.push(food);
   }
-
-  return ingredients;
 }
 
 function formatPrice(price) {
-  let formattedPrice = '$' + price;
-
+  let formattedPrice = "$" + price;
   return formattedPrice;
 }
 
-function decreasePrice (price) {
-  decreasedPrice = price - (price * 0.1);
-
-  return decreasedPrice;
+function decreasePrice(price) {
+  var lowerPrice = price - (price * 0.1);
+  return lowerPrice;
 }
 
 function createRecipe(title, ingredients, type) {
-  let recipe = {
-    title, ingredients, type
-  };
-
+  var recipe = {title, ingredients, type};
   return recipe;
 }
 
@@ -49,17 +41,3 @@ module.exports = {
   decreasePrice,
   createRecipe
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
