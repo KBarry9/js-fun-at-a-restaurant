@@ -2,9 +2,8 @@ function createRestaurant(restaurantName) {
   var pizzaRestaurant = {
     name: restaurantName,
   }
-
-  console.log(`"${pizzaRestaurant.name}"`)
-  return `"${pizzaRestaurant.name}"`
+  console.log(`'${pizzaRestaurant.name}'`)
+  return pizzaRestaurant.name
 }
 
 
